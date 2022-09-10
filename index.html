@@ -25,6 +25,13 @@
         #vanilla-js{
             color: gold;
         }
+        @media only screen and (max-width: 600px) {
+            #div-btn{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -32,9 +39,9 @@
         <h1 id="counter-heading">COUNTER</h1>
         <h6>Amran's Project With <span id="vanilla-js">Vanilla JS</span></h6>
         <h1 id="counter">0</h1>
-        <div class="m-3">
+        <div id="div-btn" class="m-3">
             <button id="decrease-btn" class="btn btn-outline-dark">DECREASE</button>
-            <button id="reset-btn" class="btn btn-outline-dark mx-3">RESET</button>
+            <button id="reset-btn" class="btn btn-outline-dark m-3">RESET</button>
             <button id="increase-btn" class="btn btn-outline-dark">INCREASE</button>
         </div>
     </div>
